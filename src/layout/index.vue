@@ -2,7 +2,7 @@
  * @Author: ymy
  * @Date: 2021-11-09 09:43:39
  * @LastEditors: ymy
- * @LastEditTime: 2021-11-10 13:27:04
+ * @LastEditTime: 2021-11-10 15:49:30
 -->
 <template>
   <!-- 顶部header -->
@@ -16,7 +16,13 @@
   >
     <!-- 内容 -->
     <div class="content">
-      <router-view></router-view>
+      <a-card>
+        <router-view v-slot="{ Component }">
+          <keep-alive>
+            <component :is="Component" />
+          </keep-alive>
+        </router-view>
+      </a-card>
     </div>
   </div>
 </template>

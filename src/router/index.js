@@ -2,7 +2,7 @@
  * @Author: ymy
  * @Date: 2021-11-09 09:47:25
  * @LastEditors: ymy
- * @LastEditTime: 2021-11-10 13:23:04
+ * @LastEditTime: 2021-11-10 15:53:31
  */
 
 import { createRouter, createWebHashHistory } from "vue-router";
@@ -12,7 +12,7 @@ export const routes = [
   {
     path: '/',
     name: 'home',
-    component: () => import(/* webpackChunkName: "layout" */ '@/pages/home/index.vue'),
+    component: () => import(/* webpackChunkName: "layout" */ '@/layout/index.vue'),
     children: [
       ...sysRoutes
     ]
