@@ -1,0 +1,23 @@
+{
+  "name": "vue3-vite-admin-template",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "ant-design-vue": "^2.2.8",
+    "vue": "^3.2.16",
+    "vue-router": "^4.0.12",
+    "vuex": "^4.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.6",
+    "@vitejs/plugin-vue": "^1.9.3",
+    "less": "^4.1.2",
+    "sass": "^1.43.4",
+    "vite": "^2.6.4",
+    "vite-plugin-components": "^0.13.3"
+  }
+}
